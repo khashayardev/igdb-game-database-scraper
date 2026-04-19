@@ -16,25 +16,25 @@ class IGDBCompleteScraper:
         self._get_access_token()
         
         # لیست همه چیزهایی که می‌خواهیم از API بگیریم
-self.fields = [
-    "id", "name", "slug", "summary", "storyline", "first_release_date",
-    "genres.id", "genres.name",
-    "platforms.id", "platforms.name", "platforms.platform_logo.url",
-    "cover.id", "cover.url", "cover.image_id",
-    "screenshots.id", "screenshots.url", "screenshots.image_id",
-    "artworks.id", "artworks.url", "artworks.image_id",
-    "videos.id", "videos.video_id", "videos.name",
-    "websites.id", "websites.url", "websites.category",
-    "involved_companies.id", "involved_companies.company.id", "involved_companies.company.name",
-    "involved_companies.developer", "involved_companies.publisher",
-    "franchise.id", "franchise.name",
-    "game_modes.id", "game_modes.name",
-    "themes.id", "themes.name",
-    "rating", "rating_count", "total_rating", "total_rating_count",
-    "time_to_beat", "category", "status", "version_title",
-    "alternative_names.name",
-    "age_ratings.id", "age_ratings.rating", "age_ratings.synopsis"
-]
+        self.fields = [
+            "id", "name", "slug", "summary", "storyline", "first_release_date",
+            "genres.id", "genres.name",
+            "platforms.id", "platforms.name", "platforms.platform_logo.url",
+            "cover.id", "cover.url", "cover.image_id",
+            "screenshots.id", "screenshots.url", "screenshots.image_id",
+            "artworks.id", "artworks.url", "artworks.image_id",
+            "videos.id", "videos.video_id", "videos.name",
+            "websites.id", "websites.url", "websites.category",
+            "involved_companies.id", "involved_companies.company.id", "involved_companies.company.name",
+            "involved_companies.developer", "involved_companies.publisher",
+            "franchise.id", "franchise.name",
+            "game_modes.id", "game_modes.name",
+            "themes.id", "themes.name",
+            "rating", "rating_count", "total_rating", "total_rating_count",
+            "time_to_beat", "category", "status", "version_title",
+            "alternative_names.name",
+            "age_ratings.id", "age_ratings.rating", "age_ratings.synopsis"
+        ]
         
         self.stats = {'total_games': 0, 'years_processed': 0, 'api_calls': 0}
 
