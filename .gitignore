@@ -1,0 +1,36 @@
+# فایل‌های متغیر محیطی (حاوی کلیدهای API)
+.env
+.env.local
+.env.*.local
+
+# فایل‌های JSON خروجی (حجم بالایی دارند و نباید در مخزن باشند)
+*.json
+!package.json
+!package-lock.json
+!tsconfig.json
+
+# فایل‌های لاگ
+*.log
+*.log.*
+
+# فایل‌های سیستمی
+.DS_Store
+Thumbs.db
+
+# فایل‌های پایتون
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# فایل‌های ویرایشگر
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# فایل‌های موقت
+*.tmp
+*.temp
