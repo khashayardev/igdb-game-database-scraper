@@ -31,7 +31,7 @@ class IGDBCompleteScraper:
             "game_modes.id", "game_modes.name",
             "themes.id", "themes.name",
             "rating", "rating_count", "total_rating", "total_rating_count",
-            "time_to_beat", "category", "status", "version_title",
+            "category", "status", "version_title",
             "alternative_names.name",
             "age_ratings.id", "age_ratings.rating", "age_ratings.synopsis"
         ]
